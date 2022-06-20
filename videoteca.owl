@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#"
+     xml:base="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca">
+        <rdfs:comment xml:lang="en">This is an ontology on a videostore&apos;s system.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#aperto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#aperto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Negozio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#disponibile -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#disponibile">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Scaffale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#anno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#anno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Film -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Film">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Attore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Attore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Cliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Cliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Persona"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Persona"/>
+        <rdfs:comment xml:lang="en">This class denotes the movies</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Formato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Formato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Negozio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Negozio">
+        <rdfs:comment xml:lang="en">This class denotes the shop.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Persona">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Scaffale"/>
+        <rdfs:comment xml:lang="en">This class denotes the person.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Regista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Regista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Scaffale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Scaffale">
+        <rdfs:comment xml:lang="en">This classe denotes the shelf.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Venditore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Venditore">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Persona"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
