@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#"
+     xml:base="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca">
+        <rdfs:comment xml:lang="en">This is an ontology on a videostore&apos;s system.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#buysFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#buysFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasActed -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasActed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasDirected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasDirected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasFormat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasFormat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isAvailable -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isAvailable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isRentedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isRentedFrom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isSituated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#isSituated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_client -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_client">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_director -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_director">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_salesperson -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#first_name_salesperson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Client -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Client">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Movie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Movie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Salesperson -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Salesperson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Shelf -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Shelf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Shop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#id_Shop">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_client -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_client">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_director -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_director">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_salesperson -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#last_name_salesperson">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#year_Movie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#year_Movie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer">
+        <rdfs:comment xml:lang="en">This class denotes the customer.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie">
+        <rdfs:comment xml:lang="en">This class denotes the movies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson">
+        <rdfs:comment xml:lang="en">This class denotes the salesperson.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf">
+        <rdfs:comment xml:lang="en">This class denotes the shelf.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop">
+        <rdfs:comment xml:lang="en">This class denotes the shop.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR02</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Adventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR05</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Akira_Kurosawa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Akira_Kurosawa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ran"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Akira</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kurosawa</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alberto_Dicembre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alberto_Dicembre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <buysFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Rumbaugh"/>
+        <first_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</first_name_client>
+        <id_Client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLI003</id_Client>
+        <last_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dicembre</last_name_client>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alfredo_Pacino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alfredo_Pacino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfather"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alfredo</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pacino</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Arnold_Schwarzenegger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Arnold_Schwarzenegger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Terminator"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arnold</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schwarzenegger</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Christian_Bale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Christian_Bale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#The_Dark_Knight"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christian</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bale</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Christopher_Nolan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Christopher_Nolan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#The_Dark_Knight"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christopher</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nolan</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR06</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#DVD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#DVD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Demi_Moore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Demi_Moore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ghost"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Demi</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moore</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Drama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Drama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR03</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR04</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Forrest_Gump -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Forrest_Gump">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Comedy"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alberto_Dicembre"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV007</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Francis_Coppola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Francis_Coppola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfather"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francis</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coppola</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Garry_Marshall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Garry_Marshall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Pretty_Woman"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Garry</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marshall</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ghost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ghost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Romance"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf1"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alberto_Dicembre"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV002</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfather -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfather">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#DVD"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Drama"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf3"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV005</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1972</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfellas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfellas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#MP4"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Drama"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Marco_Cappiello"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV003</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Cameron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Cameron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Terminator"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cameron</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Rumbaugh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Rumbaugh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Salesperson"/>
+        <first_name_salesperson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James</first_name_salesperson>
+        <id_Salesperson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAL001</id_Salesperson>
+        <last_name_salesperson rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rumbaugh</last_name_salesperson>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jerry_Zucker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jerry_Zucker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ghost"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jerry</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucker</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Joe_Johnston -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Joe_Johnston">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jumanji"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Johnston</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#John_Lasseter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#John_Lasseter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Toy_Story"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasseter</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Julia_Roberts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Julia_Roberts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Pretty_Woman"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Julia</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roberts</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jumanji -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jumanji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#DVD"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Adventure"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Marco_Cappiello"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV006</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#MP4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#MP4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <buysFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Rumbaugh"/>
+        <first_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manuel</first_name_client>
+        <id_Client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLI001</id_Client>
+        <last_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fasanella</last_name_client>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Marco_Cappiello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Marco_Cappiello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Customer"/>
+        <buysFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#James_Rumbaugh"/>
+        <first_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco</first_name_client>
+        <id_Client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLI002</id_Client>
+        <last_name_client rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cappiello</last_name_client>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Martin_Scorsese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Martin_Scorsese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfellas"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martin</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorsese</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Pretty_Woman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Pretty_Woman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#DVD"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Comedy"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf1"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV010</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ran -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#MP4"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Drama"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Alberto_Dicembre"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV009</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1985</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robert_De_Niro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robert_De_Niro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Godfellas"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De Niro</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robert_Zemeckis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robert_Zemeckis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Director"/>
+        <hasDirected rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Forrest_Gump"/>
+        <first_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robert</first_name_director>
+        <last_name_director rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zemeckis</last_name_director>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robin_Williams -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Robin_Williams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Jumanji"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robin</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Williams</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Romance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Romance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Genre"/>
+        <id_Genre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GENR01</id_Genre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+        <isSituated rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop1"/>
+        <id_Shelf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHEL01</id_Shelf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+        <isSituated rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop2"/>
+        <id_Shelf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHEL02</id_Shelf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf"/>
+        <isSituated rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop1"/>
+        <id_Shelf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHEL03</id_Shelf>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop"/>
+        <id_Shop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHOP01</id_Shop>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shop"/>
+        <id_Shop rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHOP02</id_Shop>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Tatsuya_Nakadai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Tatsuya_Nakadai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Ran"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tatsuya</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nakadai</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Terminator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Terminator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Action"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf1"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV008</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#The_Dark_Knight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#The_Dark_Knight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Blu-Ray"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Action"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf2"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Manuel_Fasanella"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV001</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</year_Movie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Tom_Hanks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Tom_Hanks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Actor"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Forrest_Gump"/>
+        <hasActed rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Toy_Story"/>
+        <first_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tom</first_name_actor>
+        <last_name_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hanks</last_name_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Toy_Story -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Toy_Story">
+        <rdf:type rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Movie"/>
+        <hasFormat rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#MP4"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Family"/>
+        <isAvailable rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Shelf3"/>
+        <isRentedFrom rdf:resource="http://www.semanticweb.org/manue/ontologies/2022/5/videoteca#Marco_Cappiello"/>
+        <id_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOV004</id_Movie>
+        <year_Movie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</year_Movie>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
